@@ -47,8 +47,34 @@
 
 
     <section class="formulario">
+      <h4 class="subtitulo">Reserva tu turno</h4>
+      <form action="#" method="post">
+        <label for="nombre">Nombre del cliente:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3123212982" required>
 
 
+        <label for="barbero">Elige tu barbero:</label>
+        <select id="barbero" name="barbero" required>
+          <option value="">-- Selecciona un barbero --</option>
+          <option value="andres">Andrés</option>
+          <option value="laura">Laura</option>
+          <option value="carlos">Carlos</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <button type="submit">Reservar</button>
+      </form>
     </section>
 
   </main>
